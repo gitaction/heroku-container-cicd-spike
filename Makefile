@@ -8,3 +8,6 @@ push:
 
 deploy:
 	./heroku-deploy.sh
+
+deploy:
+	heroku open -a $(APP_NAME)

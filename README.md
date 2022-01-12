@@ -14,6 +14,13 @@ $ heroku authorizations:create
 
 3. Refer to ./settings/secrets/actions (https://github.com/gitaction/heroku-container-cicd-spike/settings/secrets/actions), fill token with name: "HEROKU_TOKEN"
 
-Rest thing will take care by GitHub Action.
+...
+Deployment  will take care by GitHub Action.
+...
 
-Done!
+Check:
+```shell
+$ heroku open -a heroku-container-cicd-spike
+```
+
+![Deployment](live.png)
