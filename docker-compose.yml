@@ -1,0 +1,6 @@
+version: '3.2'
+
+services:
+  heroku-container-cicd-spike:
+    image: heroku-container-cicd-spike:latest
+    build: .
