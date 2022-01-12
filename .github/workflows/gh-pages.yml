@@ -14,7 +14,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: CICD
+    - shell: CICD
+      env:
+        HEROKU_TOKEN: ${{ secrets.HEROKU_TOKEN }}
       run: |
         make build
         make push
